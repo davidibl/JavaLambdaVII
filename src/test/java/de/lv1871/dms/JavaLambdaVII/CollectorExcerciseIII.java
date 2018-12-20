@@ -34,6 +34,21 @@ public class CollectorExcerciseIII {
 
 	}
 
+	/**
+	 * Findet eine Alternative die Aufgabe zu lösen. Seht euch hierfür genau die
+	 * gegebenen Möglichkeiten der Collectors in der Java Standard API an
+	 */
+	@Test
+	public void testGroupBooksbyPriceCategoryAlternative() {
+
+		Map<Long, List<Book>> booksByPriceCategory = null;
+
+		assertEquals(2, booksByPriceCategory.get(1000L).size());
+		assertEquals(5, booksByPriceCategory.get(2000L).size());
+		assertEquals(3, booksByPriceCategory.get(3000L).size());
+
+	}
+
 	private static class Book {
 		private String name;
 		private Price price = new Price();
